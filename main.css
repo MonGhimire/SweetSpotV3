@@ -1,83 +1,69 @@
-/* body {
-    background-color: rgb(250, 253, 253);
-} */
-
-/* .main {}
-
-.first-heading {} */
+* {
+    /* background-color: #d6d3d3; */
+    margin: 0;
+    box-sizing: border-box;
+}
 
 .main-header-img{
     height: 200px;
     width: 100%;
-    object-fit: cover;
+    background-image: url(./images/main-header.jpg);
+    background-size: cover;
+
 }
 
-.first-heading h1 {
+header h1 {
     background-color:#f58ea0;
     color: #dad8d8;
-
+    text-align: center;
+    padding: 16px;
 }
 
-.first-heading h2 {
+/* ---End of Header--- */
+
+main {
+    width: 80%;
+    margin: 2em auto;
+    border: 2px solid white;
+    border-radius: 8px;
+    padding: 2em;
+    background-color: #eeeeee;
+    display: block;
+}
+
+
+main h2 {
+    color: #F112F1;
+    font: 24px;
+    font-family: 'Times New Roman';
     background-color: #dad8d8;
-    color: #f112f1;
+    padding:12px;
 }
 
+main p {
+    padding: 8px;
+    }
 
-/* .second-section {} */
 
-.second-section h2 {
-    background-color: #dad8d8;
-    color: #f112f1;
-}
+/* --End of Topics section-- */
 
-.second-section > p {
-    background-color: #ff69b4;
-}
-
-/* need to have hover effects on these two following classes. */
-
-.sec-one-sect h3 {
-    background-color: #ebf64d;
-}
-
-.sec-one-sect h3:hover {
-    color: #1ed7f0;
-}
-
-.sec-sec-sect h3 {
-    background-color: #ebf64d;
-}
-
-.sec-sec-sect h3:hover {
-    color: #1ed7f0;
-}
-
-/* hover effects */
-/* actually put these two sections into one div and apply changes in one than doing it individually. */
-
-.thenextmain h2 {
-    color: #f112f1;
-    background-color: #dad8d8;    
-}
-
-.ourtreats h2 {
-    color: #f112f1;
-    background-color: #dad8d8;
-}
 
 #candy-floss {
     float: left;
     border: 5px solid #ebf64d;
+    margin-right: 16px;
 }
+
 #lollipop {
     float: right;
+    margin-left: 16px;
     border: 5px solid #1ed7f0;
 }
 
 #jelly-bean {
     float: left;
     border: 5px solid #ff69b4;
+    margin-right: 16px;
 }
 
 .ourtreats img {
@@ -85,35 +71,31 @@
     height: 100px;
     border-radius: 50%;
     cursor: pointer;
+    
 }
+
 
 .ourtreats p {
     display: block;
+    padding: 15px 10px;
+    margin: 10px 5px;
 }
 
-/* #candy-floss a {
-    width: 125px;
-    height: 100px;
-    border-radius: 50%;
-    cursor: pointer;
-}
+/* --- End of Ourtreats section --- */
 
-#lollipop a {
-    width: 125px;
-    height: 100px;
-    border-radius: 50%;
-    cursor: pointer;
-}
 
-#jelly-bean a {
-    width: 125px;
-    height: 100px;
-    border-radius: 50%;
-    cursor: pointer;
-} */
+.links-list h4 {
+    text-align: center;
+    padding: 10px 10px;
+    font-size: larger;
+}
 
 .links-list ul {
-    background-color: #1ed7f0;
+    background-color: #f58ea0;
+    padding: 8px;
+    list-style: none;
+    display: block;
+    width: 100%;
 }
 
 .links-list ul:hover {
@@ -121,44 +103,71 @@
     cursor: pointer;
 }
 
-.drop  a {
-    color: #1ed7f0;
-    font-weight: bold;
+.partners {
+    text-decoration: none;
+    width: 100%;
+    display: block;
 }
 
-/* .drop a:visited {
-    color: #917777;
-} */
+.partners:hover {
+    background-color: #f58ea0;
+    padding: 8px 2px;
+}
 
 
-/* Styles for contact page */
+
+/* --End of Partners section-- */
+
+
+
+footer h3 {
+    text-align: center;
+    padding: 20px;
+}
+
+#drop a {
+    text-decoration: none;
+}
+
+/* --End of Footer-- */
+
+
+
+/* ---Contact Page--- */
+
+.top-container {
+    height: 200px;
+    background-image:url(./images/contact-header.jpeg);
+    background-size: cover;
+}
+
+#Contact h2 {
+    margin: 20px 10px;
+}
 
 #Contact ul {
-    background-color: #1ed7f0;
-
-}
-
-#Contact ul:hover {
-    background-color: #f58ea0;
-    cursor: pointer;
+    background-color:#1ed7f0;
+    margin: 20px 20px;
+    padding: 10px 10px;
+        
 }
 
 #Contact a {
-    color: #ec10bd;
-    font-size: 16px;
-    font-family: 'Times New Roman', Times, serif;
-    font-weight: bold;
+    text-decoration: none;
 }
 
-/* #Contact a:visited {
-    color: #917777;
-} */
+#Contact li {
+    
+    list-style-type: none;
+    padding: 1px 5px;
+}
 
+#Contact li:hover {
+    background-color: #f58ea0;
+    padding: 5px 10px;
+}
 
-/* .sec-one-sect {}
-.sec-sec-sect {}
-.thenextmain {}
-.links-list {} */
-
-
-
+#backToMain a {
+    padding: 5px 10px;
+    color: #F112F1;
+}
